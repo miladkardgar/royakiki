@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('index');
+})->name('home');
 Route::get('/callback', function () {
-    return view('callback.callback');
-});
+    return view('callback');
+})->name('callback');
